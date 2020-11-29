@@ -1,6 +1,0 @@
-# compile verilog/system verilog design source files
-verilog xil_defaultlib  \
-"sequence_detector_tb_826_func_impl.v" \
-
-# Do not sort compile order
-nosort

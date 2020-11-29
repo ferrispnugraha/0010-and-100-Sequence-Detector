@@ -1,5 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Ferris-Prima-Nugraha/HKUST/2020Fall/ELEC3310/miniproject_826/miniproject_826.sim/sim_1/impl/func/xsim/sequence_detector_tb_826_func_impl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module clk_divider
-INFO: [VRFC 10-311] analyzing module mealyFSM
-INFO: [VRFC 10-311] analyzing module sequence_detector_826
-INFO: [VRFC 10-311] analyzing module glbl
