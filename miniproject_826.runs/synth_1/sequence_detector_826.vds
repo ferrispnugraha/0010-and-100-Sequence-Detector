@@ -1,0 +1,234 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Nov 29 15:55:00 2020
+# Process ID: 1436
+# Current directory: D:/Ferris-Prima-Nugraha/HKUST/2020Fall/ELEC3310/miniproject_826/miniproject_826.runs/synth_1
+# Command line: vivado.exe -log sequence_detector_826.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sequence_detector_826.tcl
+# Log file: D:/Ferris-Prima-Nugraha/HKUST/2020Fall/ELEC3310/miniproject_826/miniproject_826.runs/synth_1/sequence_detector_826.vds
+# Journal file: D:/Ferris-Prima-Nugraha/HKUST/2020Fall/ELEC3310/miniproject_826/miniproject_826.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sequence_detector_826.tcl -notrace
+Command: synth_design -top sequence_detector_826 -part xc7a35tcpg236-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-3
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14332
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1023.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sequence_detector_826' [D:/Ferris-Prima-Nugraha/HKUST/2020Fall/ELEC3310/miniproject_826/miniproject_826.srcs/sources_1/new/sequence_detector_826.vhd:20]
+INFO: [Synth 8-3491] module 'clk_divider' declared at 'D:/Ferris-Prima-Nugraha/HKUST/2020Fall/ELEC3310/miniproject_826/miniproject_826.srcs/sources_1/new/sequence_detector_826.vhd:45' bound to instance 'CLK_DIV' of component 'clk_divider' [D:/Ferris-Prima-Nugraha/HKUST/2020Fall/ELEC3310/miniproject_826/miniproject_826.srcs/sources_1/new/sequence_detector_826.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [D:/Ferris-Prima-Nugraha/HKUST/2020Fall/ELEC3310/miniproject_826/miniproject_826.srcs/sources_1/new/sequence_detector_826.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (1#1) [D:/Ferris-Prima-Nugraha/HKUST/2020Fall/ELEC3310/miniproject_826/miniproject_826.srcs/sources_1/new/sequence_detector_826.vhd:49]
+INFO: [Synth 8-3491] module 'mealyFSM' declared at 'D:/Ferris-Prima-Nugraha/HKUST/2020Fall/ELEC3310/miniproject_826/miniproject_826.srcs/sources_1/new/sequence_detector_826.vhd:77' bound to instance 'Detector' of component 'mealyFSM' [D:/Ferris-Prima-Nugraha/HKUST/2020Fall/ELEC3310/miniproject_826/miniproject_826.srcs/sources_1/new/sequence_detector_826.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'mealyFSM' [D:/Ferris-Prima-Nugraha/HKUST/2020Fall/ELEC3310/miniproject_826/miniproject_826.srcs/sources_1/new/sequence_detector_826.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'mealyFSM' (2#1) [D:/Ferris-Prima-Nugraha/HKUST/2020Fall/ELEC3310/miniproject_826/miniproject_826.srcs/sources_1/new/sequence_detector_826.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'sequence_detector_826' (3#1) [D:/Ferris-Prima-Nugraha/HKUST/2020Fall/ELEC3310/miniproject_826/miniproject_826.srcs/sources_1/new/sequence_detector_826.vhd:20]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1023.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1023.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1023.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1023.168 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Ferris-Prima-Nugraha/HKUST/2020Fall/ELEC3310/miniproject_826/miniproject_826.srcs/constrs_1/new/sequence_detector_826.xdc]
+Finished Parsing XDC File [D:/Ferris-Prima-Nugraha/HKUST/2020Fall/ELEC3310/miniproject_826/miniproject_826.srcs/constrs_1/new/sequence_detector_826.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Ferris-Prima-Nugraha/HKUST/2020Fall/ELEC3310/miniproject_826/miniproject_826.srcs/constrs_1/new/sequence_detector_826.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sequence_detector_826_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/sequence_detector_826_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1023.168 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1023.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1023.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1023.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1023.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'currentState_reg' in module 'mealyFSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                       a |                           000001 |                              000
+                       b |                           000010 |                              001
+                       f |                           000100 |                              101
+                       e |                           001000 |                              100
+                       c |                           010000 |                              010
+                       d |                           100000 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'currentState_reg' using encoding 'one-hot' in module 'mealyFSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1023.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 6     
+	   6 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1023.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1023.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1023.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1023.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1023.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1023.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1023.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1023.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1023.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1023.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     1|
+|4     |LUT2   |    65|
+|5     |LUT3   |     2|
+|6     |LUT4   |     1|
+|7     |LUT6   |     1|
+|8     |FDCE   |     6|
+|9     |FDPE   |     1|
+|10    |FDRE   |    33|
+|11    |IBUF   |     3|
+|12    |OBUF   |     2|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1023.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:37 . Memory (MB): peak = 1023.168 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1023.168 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1023.168 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1023.168 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 1023.168 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Ferris-Prima-Nugraha/HKUST/2020Fall/ELEC3310/miniproject_826/miniproject_826.runs/synth_1/sequence_detector_826.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sequence_detector_826_utilization_synth.rpt -pb sequence_detector_826_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 29 15:55:56 2020...

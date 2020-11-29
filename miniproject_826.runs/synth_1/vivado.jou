@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Nov 29 15:55:00 2020
+# Process ID: 1436
+# Current directory: D:/Ferris-Prima-Nugraha/HKUST/2020Fall/ELEC3310/miniproject_826/miniproject_826.runs/synth_1
+# Command line: vivado.exe -log sequence_detector_826.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sequence_detector_826.tcl
+# Log file: D:/Ferris-Prima-Nugraha/HKUST/2020Fall/ELEC3310/miniproject_826/miniproject_826.runs/synth_1/sequence_detector_826.vds
+# Journal file: D:/Ferris-Prima-Nugraha/HKUST/2020Fall/ELEC3310/miniproject_826/miniproject_826.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sequence_detector_826.tcl -notrace

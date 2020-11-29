@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sequence_detector_tb_826_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="sequence_detector_tb_826" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1700001fs"></ZoomEndTime>
+      <Cursor1Time time="495000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="146"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/sequence_detector_tb_826/RST_in_TB" type="logic">
+      <obj_property name="ElementShortName">RST_in_TB</obj_property>
+      <obj_property name="ObjectShortName">RST_in_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sequence_detector_tb_826/w_TB" type="logic">
+      <obj_property name="ElementShortName">w_TB</obj_property>
+      <obj_property name="ObjectShortName">w_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sequence_detector_tb_826/CLK_100M_in_TB" type="logic">
+      <obj_property name="ElementShortName">CLK_100M_in_TB</obj_property>
+      <obj_property name="ObjectShortName">CLK_100M_in_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sequence_detector_tb_826/z_TB" type="logic">
+      <obj_property name="ElementShortName">z_TB</obj_property>
+      <obj_property name="ObjectShortName">z_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sequence_detector_tb_826/CLK_2S_TB" type="logic">
+      <obj_property name="ElementShortName">CLK_2S_TB</obj_property>
+      <obj_property name="ObjectShortName">CLK_2S_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sequence_detector_tb_826/uut/Detector/currentState" type="other">
+      <obj_property name="ElementShortName">currentState</obj_property>
+      <obj_property name="ObjectShortName">currentState</obj_property>
+   </wvobject>
+</wave_config>
