@@ -47,9 +47,9 @@ entity clk_divider is
 end clk_divider;
 
 architecture mixed of clk_divider is
---constant C_reload_value : unsigned(31 downto 0) := to_unsigned( 100000000 - 2, 32);
+constant C_reload_value : unsigned(31 downto 0) := to_unsigned( 100000000 - 2, 32);
 --div 200M, for 0.5 Hz clk (2 secs clock) on real board
-constant C_reload_value : unsigned(31 downto 0) := to_unsigned( 5 - 2, 32);
+--constant C_reload_value : unsigned(31 downto 0) := to_unsigned( 5 - 2, 32);
 --div 10, for 10 MHz clk in simulation
 
 signal counter : unsigned(31 downto 0) := C_reload_value;
@@ -84,73 +84,71 @@ end mealyFSM;
 
 architecture behavioral of mealyFSM is
 type state_type is (A, B, C, D, E, F);
-signal currentState, nextState: state_type;
-signal result: STD_LOGIC;
+signal currentState: state_type;
+--signal result: STD_LOGIC;
 begin
 
 SYNC_PROC: process(reset, clock)
 begin
     if reset='1' then
         currentState <= A;
-        output <= '0';
     elsif falling_edge(clock) then --negative-edge triggered
-        currentState <= nextState;
-        output <= result;
+        case currentState is
+            when A => 
+                if input = '0' then
+                    currentState <= B;
+                else 
+                    currentState <= F;
+                end if;
+            when B =>
+                if input = '0' then
+                    currentState <= C;
+                else 
+                    currentState <= F;
+                end if;
+            when C =>
+            if input = '0' then
+                currentState <= C;
+            else
+                currentState <= D;
+            end if;
+        when D =>
+            if input = '0' then
+                currentState <= E;
+            else 
+                currentState <= F;
+        end if;
+        when E =>
+            if input = '0' then
+                currentState <= C;
+            else 
+                currentState <= F;
+            end if;
+        when F =>
+            if input = '0' then
+                currentState <= E;
+            else 
+                currentState <= F;
+            end if;
+        end case;
     end if;
 end process;
 
 NEXT_STATE_PROC: process(currentState, input)
 begin
---    result <= '0';
     case currentState is
         when A =>
-            if input = '0' then
-                result <= '0';
-                nextState <= B;
-            else 
-                result <= '0';
-                nextState <= F;
-            end if;
+            output <= '0';
         when B =>
-            if input = '0' then
-                result <= '0';
-                nextState <= C;
-            else 
-                result <= '0';
-                nextState <= F;
-            end if;
+            output <= '0';
         when C =>
-            if input = '0' then
-                result <= '0';
-                nextState <= C;
-            else
-                result <= '0';
-                nextState <= D;
-            end if;
+            output <= '0';
         when D =>
-            if input = '0' then
-                result <= '1';
-                nextState <= E;
-            else 
-                result <= '0';
-                nextState <= F;
-            end if;
+            output <= NOT input;
         when E =>
-            if input = '0' then
-                result <= '1';
-                nextState <= C;
-            else 
-                result <= '0';
-                nextState <= F;
-            end if;
+            output <= NOT input;
         when F =>
-            if input = '0' then
-                result <= '0';
-                nextState <= E;
-            else 
-                result <= '0';
-                nextState <= F;
-            end if;
+            output <= '0';
     end case;
 end process;   
 end behavioral;

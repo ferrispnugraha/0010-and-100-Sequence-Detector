@@ -48,27 +48,27 @@ begin
     CLK_100M_in_TB <= not CLK_100M_in_TB after 5 ns; --100MHz clk, period 100ns
     -- RST_in_TB
     RST_in_TB <= '1' after 0 ns,
-                 '0' after 110 ns,
-                 '1' after 1850 ns,
-                 '0' after 1860 ns;
+                 '0' after 90 ns,
+                 '1' after 1830 ns,
+                 '0' after 1840 ns;
     -- w_TB 0011 0010 1001 0010
-    w_TB <= '0' after 145 ns,
-            '0' after 245 ns,
-            '1' after 345 ns,
-            '1' after 445 ns,
+    w_TB <= '0' after 125 ns,
+            '0' after 225 ns,
+            '1' after 325 ns,
+            '1' after 425 ns,
             
-            '0' after 545 ns,
-            '0' after 645 ns,
-            '1' after 745 ns,
-            '0' after 845 ns,
+            '0' after 525 ns,
+            '0' after 625 ns,
+            '1' after 725 ns,
+            '0' after 825 ns,
             
-            '1' after 945 ns,
-            '0' after 1045 ns,
-            '0' after 1145 ns,
-            '1' after 1245 ns,
+            '1' after 925 ns,
+            '0' after 1025 ns,
+            '0' after 1125 ns,
+            '1' after 1225 ns,
             
-            '0' after 1345 ns,
-            '0' after 1445 ns,
-            '1' after 1545 ns,
-            '0' after 1645 ns;
+            '0' after 1325 ns,
+            '0' after 1425 ns,
+            '1' after 1525 ns,
+            '0' after 1625 ns;
 end Behavioral;
